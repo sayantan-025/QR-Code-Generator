@@ -1,11 +1,7 @@
 /* Background styles */
 body {
 	background-color: #111927;
-	background-image: radial-gradient(
-			at 75% 25%,
-			hsl(162, 77%, 40%) 0,
-			transparent 59%
-		),
+	background-image: radial-gradient(at 75% 25%, #17b585 0, transparent 59%),
 		radial-gradient(at 30% 80%, hsl(218, 39%, 11%) 0, transparent 55%);
 }
 
