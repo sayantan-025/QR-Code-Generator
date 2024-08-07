@@ -25,18 +25,22 @@ const InputForm = () => {
 	console.log(data);
 
 	return (
-		<div className="col-span-2 p-6 grid gap-4">
-			<InputField />
-			<InputColour />
-			<button
-				onClick={handelClick}
-				className="bg-indigo-600 mx-w-xs ml-auto px-4 py-2 text-white mt-4 rounded-sm hover:bg-indigo-700 disabled:bg-gray-300"
-			>
-				Generate QrCode
-			</button>
-			<DataContext.Provider value={value}>
-				<QrCode />
-			</DataContext.Provider>
+		<div className="grid md:grid-cols-3 gap-8 p-4">
+			<div className="md:col-span-2 p-4 grid gap-4 ">
+				<InputField />
+				<InputColour />
+				<button
+					onClick={handelClick}
+					className="bg-emerald-600 mx-w-xs ml-auto px-4 py-2 text-white mt-4 rounded-sm hover:bg-emerald-700 disabled:bg-gray-300"
+				>
+					Generate QrCode
+				</button>
+			</div>
+			<div className="md:col-span-1 grid mx-auto">
+				<DataContext.Provider value={value}>
+					<QrCode />
+				</DataContext.Provider>
+			</div>
 		</div>
 	);
 };

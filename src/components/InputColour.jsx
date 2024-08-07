@@ -14,14 +14,14 @@ const InputColour = () => {
 
 	return (
 		<div>
-			<label className="font-semibold text-md">Color</label>
-			<div className="flex items-center gap-2">
+			<label className="font-semibold text-md text-white ">Color</label>
+			<div className="flex items-center gap-2 mt-1">
 				<div
 					onClick={() => setDispalyColourPicker(!dispalyColourPicker)}
 					style={{ background: color }}
-					className="w-10 h-8 cursor-pointer border-4"
+					className="w-10 h-8 cursor-pointer border-4 "
 				></div>
-				<span>{color}</span>
+				<span className="text-white">{color}</span>
 			</div>
 
 			{dispalyColourPicker && (

@@ -8,14 +8,16 @@ const InputField = () => {
 
 	return (
 		<div>
-			<label className="font-semibold text-md">Enter URL</label>
-			<input
-				type="url"
-				className="w-full border-2 py-1 px-3 text-gray-700 rounded-sm"
-				placeholder="http://example.com"
-				value={inputValue.url}
-				onChange={handelChange}
-			/>
+			<label className="font-semibold text-md text-white ">Enter URL</label>
+			<div className="mt-1 ">
+				<input
+					type="url"
+					className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+					placeholder="http://example.com"
+					value={inputValue.url}
+					onChange={handelChange}
+				/>
+			</div>
 		</div>
 	);
 };
