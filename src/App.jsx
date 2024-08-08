@@ -17,7 +17,7 @@ const App = () => {
 	};
 
 	return (
-		<div className="body h-screen pt-36 px-2">
+		<div className="body h-screen pt-20 md:pt-36 px-2">
 			<div className="container mx-auto max-w-4xl rounded-md shadow card">
 				<div className="">
 					<InputContext.Provider value={value}>

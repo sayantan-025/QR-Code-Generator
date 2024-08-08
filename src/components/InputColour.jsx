@@ -25,7 +25,7 @@ const InputColour = () => {
 			</div>
 
 			{dispalyColourPicker && (
-				<div className="absolute mt-2">
+				<div className="absolute mt-2 z-10">
 					<ChromePicker color={color} onChange={handelChange} />
 				</div>
 			)}
